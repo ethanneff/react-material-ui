@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "prettier --write . && tsc && eslint '**/*.[jt]s?(x)' --cache --fix",
-    "test": "react-scripts test"
+    "test": "TZ=America/Los_Angeles react-scripts test"
   },
   "browserslist": {
     "production": [

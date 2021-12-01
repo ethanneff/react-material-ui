@@ -6,6 +6,7 @@ import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
 import Typography from '@mui/material/Typography';
+import { ReactElement } from 'react';
 import './App.css';
 import logo from './logo.svg';
 
@@ -56,7 +57,7 @@ const theme = createTheme({
   },
 });
 
-const App = () => {
+const App = (): ReactElement => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

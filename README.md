@@ -30,9 +30,15 @@ yarn test
 yarn build
 ```
 
+### Documentation
+
+- UI https://mui.com/getting-started/usage/
+- Redux https://redux-toolkit.js.org/tutorials/quick-start
+- Navigation https://reactrouter.com/docs/en/v6/getting-started/overview
+
 ### TODO
 
-- [ ] lint errors
+- [x] lint errors
 - [ ] react router
 - [ ] redux toolkit
 - [ ] axios
