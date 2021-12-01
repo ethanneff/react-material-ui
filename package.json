@@ -3,30 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "@emotion/react": "11.7.0",
+    "@emotion/styled": "11.6.0",
+    "@mui/icons-material": "5.2.0",
+    "@mui/material": "5.2.2",
+    "@testing-library/jest-dom": "5.15.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
+    "@types/jest": "27.0.3",
+    "@types/node": "16.11.11",
+    "@types/react": "17.0.37",
+    "@types/react-dom": "17.0.11",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "typescript": "4.5.2",
+    "web-vitals": "2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "lint": "prettier --write . && tsc && eslint '**/*.[jt]s?(x)' --cache --fix",
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [
@@ -39,5 +37,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jest": "25.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "eslint-plugin-typescript-sort-keys": "2.1.0",
+    "prettier": "2.5.0"
   }
 }
