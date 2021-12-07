@@ -30,6 +30,28 @@ yarn test
 yarn build
 ```
 
+### Directory
+
+```sh
+.
+├── .github/            # github action CI
+├── .vscode/            # IDE configuration
+├── build/              # compiled prod version
+├── public/             # static assets
+├── src/
+│   ├── components/     # share UI components
+│   ├── features/       # features (routing, network, redux)
+│   ├── index.css       # global styles
+│   ├── index.tsx       # app entry
+│   ├── screens/        # pages
+│   └── setupTests.ts   # testing mocks
+├── package.json        # dependencies
+├── prettier.config.js  # formatting
+├── README.md
+└── tsconfig.json       # typescript config
+└── yarn.lock
+```
+
 ### Documentation
 
 - UI https://mui.com/getting-started/usage/
