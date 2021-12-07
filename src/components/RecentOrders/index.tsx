@@ -5,6 +5,7 @@ import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { Title } from '../Title';
+import { ReactElement } from 'react';
 
 // Generate Order Data
 function createData(
@@ -65,7 +66,7 @@ function preventDefault(event: React.MouseEvent) {
   event.preventDefault();
 }
 
-export const Orders = () => {
+export const RecentOrders = (): ReactElement => {
   return (
     <>
       <Title>Recent Orders</Title>

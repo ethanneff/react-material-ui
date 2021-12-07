@@ -26,8 +26,8 @@ module.exports = {
   ],
   root: true,
   rules: {
-    'import/no-cycle': 'error',
-    'import/no-unresolved': 'error',
+    // 'import/no-cycle': 'error',
+    // 'import/no-unresolved': 'error',
     'react-hooks/exhaustive-deps': [
       'error',
       { enableDangerousAutofixThisMayCauseInfiniteLoops: true },

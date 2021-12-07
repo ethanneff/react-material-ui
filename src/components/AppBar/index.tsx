@@ -6,7 +6,8 @@ import IconButton from '@mui/material/IconButton';
 import { styled } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Configs } from '../../features';
+import { ReactElement } from 'react';
+import { Configs, usePathName } from '../../features';
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -35,7 +36,9 @@ type Props = {
   onDrawerToggle: () => void;
 };
 
-export const AppBar = ({ open, onDrawerToggle }: Props) => {
+export const AppBar = ({ open, onDrawerToggle }: Props): ReactElement => {
+  const pathName = usePathName();
+
   return (
     <StyledAppBar position="absolute" open={open}>
       <Toolbar sx={{ pr: '24px' }}>
@@ -55,7 +58,7 @@ export const AppBar = ({ open, onDrawerToggle }: Props) => {
           noWrap
           sx={{ flexGrow: 1 }}
         >
-          Dashboard
+          {pathName}
         </Typography>
         <IconButton color="inherit">
           <Badge badgeContent={4} color="secondary">

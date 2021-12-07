@@ -1,12 +1,13 @@
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { Title } from '../Title';
+import { ReactElement } from 'react';
 
 function preventDefault(event: React.MouseEvent) {
   event.preventDefault();
 }
 
-export const Deposits = () => {
+export const Deposits = (): ReactElement => {
   return (
     <>
       <Title>Recent Deposits</Title>

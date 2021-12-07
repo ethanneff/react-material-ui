@@ -1,4 +1,5 @@
 import { useTheme } from '@mui/material/styles';
+import { ReactElement } from 'react';
 import {
   Label,
   Line,
@@ -26,7 +27,7 @@ const data = [
   createData('24:00', undefined),
 ];
 
-export const Chart = () => {
+export const Chart = (): ReactElement => {
   const theme = useTheme();
 
   return (

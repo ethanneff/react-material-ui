@@ -21,6 +21,10 @@ yarn lint
 ```
 
 ```sh
+yarn prettier
+```
+
+```sh
 yarn test
 ```
 
@@ -61,7 +65,11 @@ yarn build
 ### TODO
 
 - [x] lint errors
-- [ ] react router
+- [x] react router
+- [ ] fix eslint
 - [ ] redux toolkit
 - [ ] axios
+- [ ] mock data
+- [ ] suspense
+- [ ] error boundary
 - [ ] theme

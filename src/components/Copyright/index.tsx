@@ -1,7 +1,8 @@
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import { ReactElement } from 'react';
 
-export const Copyright = () => {
+export const Copyright = (): ReactElement => {
   return (
     <Typography
       variant="body2"

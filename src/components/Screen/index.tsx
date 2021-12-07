@@ -2,13 +2,14 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
+import { ReactElement } from 'react';
 import { Copyright } from '../Copyright';
 
 type Props = {
   children: React.ReactNode;
 };
 
-export const Screen = ({ children }: Props) => {
+export const Screen = ({ children }: Props): ReactElement => {
   return (
     <Box
       component="main"
