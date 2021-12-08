@@ -40,21 +40,23 @@ yarn build
 
 ```sh
 .
-├── .github/            # github action CI
-├── .vscode/            # IDE configuration
-├── build/              # compiled prod version
-├── public/             # static assets
+├── .github/                # github action CI
+├── .vscode/                # IDE configuration
+├── build/                  # compiled prod version
+├── public/                 # static assets
 ├── src/
-│   ├── components/     # share UI components
-│   ├── features/       # features (routing, network, redux)
-│   ├── index.css       # global styles
-│   ├── index.tsx       # app entry
-│   ├── screens/        # pages
-│   └── setupTests.ts   # testing mocks
-├── package.json        # dependencies
-├── prettier.config.js  # formatting
+│   ├── components/         # shared UI
+│   ├── features/           # shared features (navigation, network)
+│   ├── redux/              # shared data
+│   ├── screens/            # pages
+│   ├── index.css           # global styles
+│   ├── index.tsx           # app entry
+│   ├── react-app-env.d.ts  # typescript typings
+│   └── setupTests.ts       # testing mocks
+├── package.json            # dependencies
+├── prettier.config.js      # formatting
 ├── README.md
-└── tsconfig.json       # typescript config
+└── tsconfig.json           # typescript config
 └── yarn.lock
 ```
 
