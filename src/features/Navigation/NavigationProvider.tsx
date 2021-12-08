@@ -1,12 +1,14 @@
 import { ReactElement } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Header } from '../../components';
+import { Configs } from '..';
+import { AppBar, Drawer } from '../../components';
 import { Customers, Dashboard, NotFound, Orders } from '../../screens';
 
-export const RouterProvider = (): ReactElement => {
+export const NavigationProvider = (): ReactElement => {
   return (
-    <BrowserRouter>
-      <Header />
+    <BrowserRouter basename={Configs.basename}>
+      <AppBar />
+      <Drawer />
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="dashboard" element={<Dashboard />} />

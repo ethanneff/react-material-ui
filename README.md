@@ -71,9 +71,9 @@ Navigation https://reactrouter.com/docs/en/v6/getting-started/overview
 - [x] lint errors
 - [x] react router
 - [ ] fix eslint
-- [ ] redux toolkit
+- [x] redux toolkit
 - [ ] axios
 - [ ] mock data
 - [ ] suspense
-- [ ] error boundary
-- [ ] theme
+- [x] error boundary
+- [x] theme

@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App, reportWebVitals } from './features';
+import { ErrorBoundary } from 'react-error-boundary';
+import { ErrorFallback } from './components';
+import {
+  AppProvider,
+  NavigationProvider,
+  ReduxProvider,
+  reportWebVitals,
+} from './features';
 import './index.css';
 
-ReactDOM.render(
+const Root = () => (
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <ReduxProvider>
+        <AppProvider>
+          <NavigationProvider />
+        </AppProvider>
+      </ReduxProvider>
+    </ErrorBoundary>
+  </React.StrictMode>
 );
+
+ReactDOM.render(<Root />, document.getElementById('root'));
 
 reportWebVitals();

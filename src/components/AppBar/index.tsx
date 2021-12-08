@@ -8,6 +8,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { ReactElement } from 'react';
 import { Configs, usePathName } from '../../features';
+import { uiSlice, useAppDispatch, useAppSelector } from '../../redux';
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -31,13 +32,12 @@ const StyledAppBar = styled(MuiAppBar, {
   }),
 }));
 
-type Props = {
-  open: boolean;
-  onDrawerToggle: () => void;
-};
-
-export const AppBar = ({ open, onDrawerToggle }: Props): ReactElement => {
+export const AppBar = (): ReactElement => {
   const pathName = usePathName();
+  const dispatch = useAppDispatch();
+  const open = useAppSelector((state) => state.ui.drawerOpen);
+  const onDrawerToggle = () => dispatch(uiSlice.actions.toggleDrawer());
+  const onThemeToggle = () => dispatch(uiSlice.actions.toggleDarkMode());
 
   return (
     <StyledAppBar position="absolute" open={open}>
@@ -60,7 +60,7 @@ export const AppBar = ({ open, onDrawerToggle }: Props): ReactElement => {
         >
           {pathName}
         </Typography>
-        <IconButton color="inherit">
+        <IconButton color="inherit" onClick={onThemeToggle}>
           <Badge badgeContent={4} color="secondary">
             <NotificationsIcon />
           </Badge>
