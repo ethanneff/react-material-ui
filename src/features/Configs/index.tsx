@@ -1,5 +1,5 @@
 export const Configs = {
   drawerWidth: 240,
-  basename: 'react-material-ui',
+  basename: 'template-material-ui',
   production: false,
 };

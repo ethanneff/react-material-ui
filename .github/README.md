@@ -2,7 +2,7 @@
 
 React + Redux Toolkit + TypeScript + React Router + Material UI
 
-https://ethanneff.github.io/react-material-ui/
+https://ethanneff.github.io/template-material-ui/
 
 ### Install
 
