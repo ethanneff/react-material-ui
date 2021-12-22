@@ -1,4 +1,4 @@
-# React Boilerplate
+# React Material UI Boilerplate
 
 React + Redux Toolkit + TypeScript + React Router + Material UI
 
