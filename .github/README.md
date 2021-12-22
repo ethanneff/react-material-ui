@@ -1,6 +1,6 @@
 # React Material UI Boilerplate
 
-React + Redux Toolkit + TypeScript + React Router + Material UI
+React + Redux Toolkit + TypeScript + React Router + Material UI + Github Pages
 
 https://ethanneff.github.io/template-material-ui/
 
