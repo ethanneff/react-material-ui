@@ -4,6 +4,10 @@ React + Redux Toolkit + TypeScript + React Router + Material UI
 
 https://ethanneff.github.io/template-material-ui/
 
+light|dark
+---|---
+<img width="963" alt="Screen Shot 2021-12-22 at 2 30 30 PM" src="https://user-images.githubusercontent.com/2933593/147157541-d79b2715-15f1-4aaf-a536-ae8745bf9496.png">|<img width="960" alt="Screen Shot 2021-12-22 at 2 30 36 PM" src="https://user-images.githubusercontent.com/2933593/147157538-36390bfd-caf2-4029-add7-60d34912b92e.png">
+
 ### Install
 
 ```sh
@@ -72,7 +76,7 @@ Navigation https://reactrouter.com/docs/en/v6/getting-started/overview
 
 - [x] lint errors
 - [x] react router
-- [ ] fix eslint
+- [x] fix eslint
 - [x] redux toolkit
 - [ ] axios
 - [ ] mock data
